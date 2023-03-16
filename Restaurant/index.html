@@ -1,0 +1,683 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+
+    <!--animation-->
+    <link rel="stylesheet" href="/assets/css/animate.css">
+
+    <!-- slider -->
+    <link rel="stylesheet" href="/vendor/Owl_Carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/vendor/Owl_Carousel/css/owl.theme.default.min.css">
+
+    <!--custom css-->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body id="body">
+
+        <!-- preloader -->
+        <div class="preloader-bg" id="preloader">
+            <div class="preloader"></div>
+        </div>
+    
+        <!-- Top Header -->
+        <div class="top-header">
+            <nav class="navbar" id="navbar">
+                <div class="navbar-container container-lg d-flex a-center j-between">
+                    <div class="navbar-logo">
+                        <a href="#" class="logo">Food.</a>
+                    </div>
+                    <div class="navbar-menu">
+                        <ul class="d-flex a-center">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>    
+                    </div>
+                    <div class="right d-flex a-center" style="gap: 1rem;">
+                        <div class="navbar-icons">
+                            <a href="#" class="search">
+                                <i class="fas fa-search"></i>
+                            </a>
+                            <a href="" class="search">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </div>
+                        <div class="div theme-changer">
+                            <i class="theme-btn fas fa-sun active-theme" id="theme-btn-default"></i>
+                            <i class="theme-btn fas fa-moon" id="theme-btn"></i>
+                        </div>
+                        <div class="mobile-menu-icon" id="menuBtn">
+                            <span class="line" id="first-line"></span>
+                            <span class="line" id="second-line"></span>
+                            <span class="line" id="third-line"></span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="hero-section container-lg">
+                <div class="hero-content d-flex a-center">
+                    <div class="left animated fadeInLeft">
+                        <h1 id="" class="animated slideInLeft" style="animation-delay: .25s;">Welcome to the world of<span class="primary"> Tasty & Fresh</span> Foods.</h1>
+                        <p class="animated slideInLeft" style="animation-delay: .35s;">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Incidunt necessitatibus, dolor dolorem maiores nam odio repudiandae odit ipsam, 
+                            blanditiis ex magni ratione id voluptates fuga laboriosam recusandae. Veniam, a optio!</p>
+                        <a href="#">
+                            <button class="hero-cta launch">Order Now</button>
+                        </a>
+                    </div>
+                    <div class="right animated fadeInRight" style="animation-delay: .35s;">
+                        <div class="hero-banner">
+                            <img width=400 src="/assets/img/home.png" alt="" class="hero-img default" id="hero-img">
+                        </div>
+                        <div class="hero-img-selector container-lg d-flex a-center j-center animated fadeInUp" id="desktop-remove">
+                            <img width="80" src="/assets/img/home.png" alt="" class="hero-img-hover" 
+                            onmouseover="imgSlider('/assets/img/home.png');">
+                            <img width="80" src="/assets/img/home-img-2.png" alt="" class="hero-img-hover" 
+                            onmouseover="imgSlider('/assets/img/home-img-2.png');">
+                           
+                            <img width="80" src="/assets/img/about.png" alt="" class="hero-img-hover" 
+                            onmouseover="imgSlider('/assets/img/about.png');">
+                        </div>
+                    </div>
+                </div>
+                        
+                 <!-- selector -->
+                <div class="hero-img-selector container-lg d-flex a-center j-center animated fadeInUp" id="tab-remove">
+                    <img width="80" src="/assets/img/home.png" alt="" class="hero-img-hover" 
+                    onmouseover="imgSlider('/assets/img/home.png');">
+                    <img width="80" src="/assets/img/home-img-2.png" alt="" class="hero-img-hover" 
+                    onmouseover="imgSlider('/assets/img/home-img-2.png');">
+                    <img width="80" src="/assets/img/about.png" alt="" class="hero-img-hover" 
+                    onmouseover="imgSlider('/assets/img/about.png');">
+                </div>
+            </div>
+        </div>
+        <!-- top-header -->
+
+        <!-- About section -->
+        <section class="about container-lg" id="about">
+            <h3 class="primary about-header text-center">About Us</h3>
+            <div class="row d-flex j-center">
+                <div class="about-img d-flex a-cener j-center">
+                    <img width="340" src="/assets/img/m2.jpg" alt="" class="about-img-default">
+                    <img width="20" src="/assets/img/p-1.jpg" alt="">
+                </div>
+                <div class="about-content">
+                    <h1>We speak the <br> <span class="primary">good food</span> language</h1>
+                    <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Animi sapiente non corporis cupiditate cum, 
+                        delectus, perspiciatis earum officiis nesciunt mollitia 
+                        sunt maxime ducimus fugit id!
+                    </p>
+                    <a href="#">
+                        <button class="launch about-btn" style="margin-top: 1rem;">Learn More</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Food menu -->
+        <section class="menu container-lg" id="menu">
+            <h3 class="menu-header primary text-center">Our Menu</h3>
+            <h1 class="text-center menu-title">Popular Dishes</h1>
+
+            <div class="menu-row owl-carousel owl-theme" id="menu-row">
+                <div class="item menu-card">
+                    <a href="#">
+                        <div class="menu-card-img">
+                            <img width="400" src="/assets/img/menu-1.jpg" alt="">
+                        </div>
+                        <div class="menu-card-title-price d-flex a-center j-between">
+                            <h3>Delicious Pizza</h2>
+                            <h4 class="primary price">$45</h4>
+                        </div>
+                        <div class="menu-card-details">
+                            <p class="text-muted small-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Odio accusamus molestiae consectetur quos. Magnam, dolor?
+                            </p>
+                        </div>
+                        <div class="menu-card-rating">
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star text-muted small"></i>
+                        </div>
+                    </a>
+                </div>    
+
+                <div class="item menu-card">
+                    <a href="#">
+                        <div class="menu-card-img">
+                            <img width="400" src="/assets/img/menu-2.jpg" alt="">
+                        </div>
+                        <div class="menu-card-title-price d-flex a-center j-between">
+                            <h3>Delicious Pizza</h2>
+                            <h4 class="primary price">$45</h4>
+                        </div>
+                        <div class="menu-card-details">
+                            <p class="text-muted small-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Odio accusamus molestiae consectetur quos. Magnam, dolor?
+                            </p>
+                        </div>
+                        <div class="menu-card-rating">
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star text-muted small"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item menu-card">
+                    <a href="#">
+                        <div class="menu-card-img">
+                            <img width="400" src="/assets/img/menu-3.jpg" alt="">
+                        </div>
+                        <div class="menu-card-title-price d-flex a-center j-between">
+                            <h3>Delicious Pizza</h2>
+                            <h4 class="primary price">$45</h4>
+                        </div>
+                        <div class="menu-card-details">
+                            <p class="text-muted small-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Odio accusamus molestiae consectetur quos. Magnam, dolor?
+                            </p>
+                        </div>
+                        <div class="menu-card-rating">
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star text-muted small"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item menu-card">
+                    <a href="#">
+                        <div class="menu-card-img">
+                            <img width="400" src="/assets/img/menu-4.jpg" alt="">
+                        </div>
+                        <div class="menu-card-title-price d-flex a-center j-between">
+                            <h3>Delicious Pizza</h2>
+                            <h4 class="primary price">$45</h4>
+                        </div>
+                        <div class="menu-card-details">
+                            <p class="text-muted small-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Odio accusamus molestiae consectetur quos. Magnam, dolor?
+                            </p>
+                        </div>
+                        <div class="menu-card-rating">
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star text-muted small"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item menu-card">
+                    <a href="#">
+                        <div class="menu-card-img">
+                            <img width="400" src="/assets/img/menu-5.jpg" alt="">
+                        </div>
+                        <div class="menu-card-title-price d-flex a-center j-between">
+                            <h3>Delicious Pizza</h2>
+                            <h4 class="primary price">$45</h4>
+                        </div>
+                        <div class="menu-card-details">
+                            <p class="text-muted small-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Odio accusamus molestiae consectetur quos. Magnam, dolor?
+                            </p>
+                        </div>
+                        <div class="menu-card-rating">
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star text-muted small"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item menu-card">
+                    <a href="#">
+                        <div class="menu-card-img">
+                            <img width="400" src="/assets/img/menu-6.jpg" alt="">
+                        </div>
+                        <div class="menu-card-title-price d-flex a-center j-between">
+                            <h3>Delicious Pizza</h2>
+                            <h4 class="primary price">$45</h4>
+                        </div>
+                        <div class="menu-card-details">
+                            <p class="text-muted small-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Odio accusamus molestiae consectetur quos. Magnam, dolor?
+                            </p>
+                        </div>
+                        <div class="menu-card-rating">
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star text-muted small"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="item menu-card">
+                    <a href="#">
+                        <div class="menu-card-img">
+                            <img width="400" src="/assets/img/menu-7.jpg" alt="">
+                        </div>
+                        <div class="menu-card-title-price d-flex a-center j-between">
+                            <h3>Delicious Pizza</h2>
+                            <h4 class="primary price">$45</h4>
+                        </div>
+                        <div class="menu-card-details">
+                            <p class="text-muted small-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Odio accusamus molestiae consectetur quos. Magnam, dolor?
+                            </p>
+                        </div>
+                        <div class="menu-card-rating">
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star gold small"></i>
+                            <i class="fas fa-star text-muted small"></i>
+                        </div>
+                    </a>
+                </div>      
+                
+            </div>
+        </section>
+
+        <!-- The team -->
+        <section class="team container-lg" id="team">
+            <h3 class="team-header primary text-center">The Team</h3>
+            <h1 class="text-center team-title">Our Experienced Chefs</h1>
+
+            <div class="team-row">
+                <div class="team-card-container">
+                    <div class="team-card">
+                        <div class="team-member-img">
+                            <img src="/assets/img/client-review/pic-1.png" alt="">
+                            <div class="img-bg" id="img-clip"></div>
+                        </div>
+                        <div class="team-member-info">
+                            <h3 class="dark">Uzumaki Naruto</h3>
+                            <h5 class="text-muted">Senior Chef</h5>
+                        </div>
+                        <div class="team-member-social">
+                            <ul class="d-flex a-center j-center">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card-container">
+                    <div class="team-card">
+                        <div class="team-member-img">
+                            <img src="/assets/img/client-review/pic-2.png" alt="">
+                            <div class="img-bg" id="img-clip"></div>
+                        </div>
+                        <div class="team-member-info">
+                            <h3 class="dark">Mikasa Ackerman</h3>
+                            <h5 class="text-muted">Senior Chef</h5>
+                        </div>
+                        <div class="team-member-social">
+                            <ul class="d-flex a-center j-center">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card-container">
+                    <div class="team-card">
+                        <div class="team-member-img">
+                            <img src="/assets/img/client-review/pic-3.png" alt="">
+                            <div class="img-bg" id="img-clip"></div>
+                        </div>
+                        <div class="team-member-info">
+                            <h3 class="dark">Yami Sukehiro</h3>
+                            <h5 class="text-muted">Senior Chef</h5>
+                        </div>
+                        <div class="team-member-social">
+                            <ul class="d-flex a-center j-center">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card-container">
+                    <div class="team-card">
+                        <div class="team-member-img">
+                            <img src="/assets/img/client-review/pic-4.png" alt="">
+                            <div class="img-bg" id="img-clip"></div>
+                        </div>
+                        <div class="team-member-info">
+                            <h3 class="dark">Uzumaki Naruto</h3>
+                            <h5 class="text-muted">Senior Chef</h5>
+                        </div>
+                        <div class="team-member-social">
+                            <ul class="d-flex a-center j-center">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card-container">
+                    <div class="team-card">
+                        <div class="team-member-img">
+                            <img src="/assets/img/client-review/pic-5.png" alt="">
+                            <div class="img-bg" id="img-clip"></div>
+                        </div>
+                        <div class="team-member-info">
+                            <h3 class="dark">Mikasa Ackerman</h3>
+                            <h5 class="text-muted">Senior Chef</h5>
+                        </div>
+                        <div class="team-member-social">
+                            <ul class="d-flex a-center j-center">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card-container">
+                    <div class="team-card">
+                        <div class="team-member-img">
+                            <img src="/assets/img/client-review/pic-1.png" alt="">
+                            <div class="img-bg" id="img-clip"></div>
+                        </div>
+                        <div class="team-member-info">
+                            <h3 class="dark">Yami Sukehiro</h3>
+                            <h5 class="text-muted">Senior Chef</h5>
+                        </div>
+                        <div class="team-member-social">
+                            <ul class="d-flex a-center j-center">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile nav menu -->
+        <section class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-list d-flex a-center j-center">
+                <ul class="d-flex a-center">
+                    <li>
+                        <a href="#">
+                            <img width="25" src="/assets/png_icons/newsfeed_64.png" alt="" title="Food Update">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img width="25" src="/assets/png_icons/food-menu_64.png" alt="" title="Our Menu">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img width="25" src="/assets/png_icons/home_64.png" alt="" title="Home">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img width="25" src="/assets/png_icons/profile_64.png" alt="" title="Profile">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img width="25" src="/assets/png_icons/settings_64.png" alt="" title="Settings">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- navbar mobile menu -->
+        <section class="navbar-mobile" id="navbar-mobile">
+            <div class="navbar-mobile-list d-flex a-cener j-center">
+                <ul class="d-flex a-center">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">What's new</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>    
+            </div>
+        </section>
+
+        <!-- Newsletter section -->
+        <section class="newsletter container-lg" id="newsletter">
+            <h3 class="primary text-center newletter-head">Our Newsletter</h3>
+
+            <div class="newsletter-container d-flex a-center j-between">
+                <div class="left">
+                    <h2 class="dark">Subscribe to our weekly newsletter for more updates,
+                        videos, news and more.
+                    </h2>
+                </div>
+                <div class="right">
+                    <form>
+                        <i class="fas fa-envelope text-muted"></i>
+                        <input type="email" name="email" id="input-box" class="input-box" placeholder="Email for newsletter...">
+                        <button type="submit" class="launch submit-btn" id="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section class="footer" id="footer">
+            <div class="footer-container container-lg d-flex j-between">
+                <div class="footer-list help">
+                    <h3 class="dark footer-list-header">Guide</h3>
+                    <ul>
+                        <li><a href="#" class="text-muted">About Us</a></li>
+                        <li><a href="#" class="text-muted">How to Order</a></li>
+                        <li><a href="#" class="text-muted">Shopping Guide</a></li>
+                        <li><a href="#" class="text-muted">Ebook</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list partners">
+                    <h3 class="dark footer-list-header">Our Partners</h3>
+                    <ul>
+                        <li><a href="#" class="text-muted">eBay</a></li>
+                        <li><a href="#" class="text-muted">Wallmart</a></li>
+                        <li><a href="#" class="text-muted">Amazon</a></li>
+                        <li><a href="#" class="text-muted">Cold Stone</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list contact">
+                    <h3 class="dark footer-list-header">Contact</h3>
+                    <ul>
+                        <li>
+                            <a href="#" class="text-muted">
+                                <i class="fas fa-envelope primary"></i>
+                                info@foods.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-muted">
+                                <i class="fas fa-phone primary"></i>
+                                +234 905 8919 615
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-muted">
+                                <i class="fas fa-map-marker-alt primary"></i>
+                                Okene, Kogi State.
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-list follow">
+                    <h3 class="dark footer-list-header">Follow Us</h3>
+                    <ul>
+                        <li><a href="#" class="text-muted">Facebook</a></li>
+                        <li><a href="#" class="text-muted">Instagram</a></li>
+                        <li><a href="#" class="text-muted">Twitter</a></li>
+                        <li><a href="#" class="text-muted">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Credit -->
+            <div class="credit">
+                <p class="text-muted text-center">Copyright &copy; <span class="primary">Foods.</span> 2022 | All rights reserved.</p>
+            </div>
+        </section>
+
+
+
+    <!-- jQuery -->
+    <script src="/assets/lib/jQuery/jquery.min.js"></script>
+    
+    <!-- Splide -->
+    <script src="/vendor/Owl_Carousel/js/owl.carousel.js"></script>
+
+    <!-- Custom JS File -->
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
